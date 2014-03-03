@@ -1,0 +1,20 @@
+{
+	"name": "creativecoder/wordpress-subdir-bootstrap",
+	"type": "library",
+	"license": "MIT",
+	"description": "Files needed for a subdirectory install of WordPress",
+	"homepage": "http://github.com/creativecoder/wordpress-subdir-bootstrap",
+	"authors": [
+		{
+			"name": "Grant Kinney",
+			"email": "grant@verismo.io",
+			"homepage": "https://github.com/creativecoder"
+		}
+	],
+	"keywords": [
+		"wordpress", "stack", "composer"
+	],
+	"support": {
+		"issues": "https://github.com/creativecoder/wordpress-subdir-bootstrap/issues"
+	}
+}
