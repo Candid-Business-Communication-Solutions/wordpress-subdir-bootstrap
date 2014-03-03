@@ -1,0 +1,29 @@
+{
+	"name": "creativecoder/wordpress-subdir-bootstrap",
+	"type": "webasset",
+	"license": "MIT",
+	"description": "Files needed for a subdirectory install of WordPress",
+	"homepage": "http://github.com/creativecoder/wordpress-subdir-bootstrap",
+	"authors": [
+		{
+			"name": "Grant Kinney",
+			"email": "grant@verismo.io",
+			"homepage": "https://github.com/creativecoder"
+		}
+	],
+	"keywords": [
+		"wordpress", "stack", "composer"
+	],
+	"support": {
+		"issues": "https://github.com/creativecoder/wordpress-subdir-bootstrap/issues"
+	},
+	"config": {
+		"preferred-install": "dist"
+	},
+	"require": {
+		"bitexpert/web-asset-installer": "*"
+	},
+	"extra": {
+		"target-dir": "./"
+	}
+}
