@@ -126,7 +126,7 @@ define( 'NONCE_SALT',       getenv('NONCE_SALT') );
 * in their development environments.
 */
 
-if ( 'local' === WP_DEV || 'development' === WP_DEV )
+if ( 'local' === WP_ENV || 'development' === WP_ENV )
 	define( 'WP_DEBUG', true );
 else
 	define( 'WP_DEBUG', false );
