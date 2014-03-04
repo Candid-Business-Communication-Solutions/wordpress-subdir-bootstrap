@@ -15,7 +15,6 @@
 
 define( 'WP_CONFIG_PATH', dirname(__FILE__) );
 
-
 /**
  * Include packages installed by composer
  */
@@ -25,7 +24,7 @@ require_once( 'vendor/autoload.php' );
  * Load environment variables from the .env file with Dotenv
  */
 Dotenv::load( WP_CONFIG_PATH );
-Dotenv::required( array('DB_NAME', 'DB_USER', 'DB_PASSWORD', 'WP_HOME', 'WP_SITEURL') );
+Dotenv::required( array('DB_NAME', 'DB_USER', 'DB_PASSWORD') );
 
 /**
  * Set up our global environment constant and load its config first
@@ -39,7 +38,7 @@ define( 'WP_ENV', getenv('WP_ENV') ? getenv('WP_ENV') : 'local' );
 define( 'DB_NAME', getenv('DB_NAME') );
 define( 'DB_USER', getenv('DB_USER') );
 define( 'DB_PASSWORD', getenv('DB_PASSWORD') );
-define(' DB_HOST', getenv('DB_HOST') ? getenv('DB_HOST') : 'localhost' );
+define( 'DB_HOST', getenv('DB_HOST') ? getenv('DB_HOST') : 'localhost' );
 
 /**
  * WordPress Database Table settings
