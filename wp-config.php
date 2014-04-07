@@ -23,8 +23,10 @@ require_once( 'vendor/autoload.php' );
 /**
  * Load environment variables from the .env file with Dotenv
  */
-Dotenv::load( WP_CONFIG_PATH );
-Dotenv::required( array('DB_NAME', 'DB_USER', 'DB_PASSWORD') );
+if ( file_exists(WP_CONFIG_PATH . '/.env') ) {
+	Dotenv::load( WP_CONFIG_PATH );
+	Dotenv::required( array('DB_NAME', 'DB_USER', 'DB_PASSWORD') );
+}
 
 /**
  * Set up our global environment constant and load its config first
